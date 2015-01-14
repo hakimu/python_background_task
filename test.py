@@ -2,9 +2,6 @@ import newrelic.agent
 newrelic.agent.initialize('newrelic.ini')
 from time import sleep
 
-
-
-
 @newrelic.agent.background_task()
 def adder():
 	x = 100
@@ -17,7 +14,6 @@ def greeter():
 	print "hello"
 	sleep(5)
 	print "goodbye"
-
 
 adder()
 
